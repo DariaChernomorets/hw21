@@ -1,0 +1,24 @@
+.partners{
+  padding: 60px 0;
+
+  &__list{
+    gap: 75px;
+  }
+  ul {
+    a {
+      &.active,
+      &:hover:not(.active) {
+        svg{
+          path{
+            fill: $accent-color-secondary;
+          }
+        }
+      }
+      &:hover:not(.active) {
+        fill: $accent-color-secondary;
+        transition: .3s;
+      }
+    }
+  }
+
+}

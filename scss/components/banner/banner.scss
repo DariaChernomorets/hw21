@@ -1,0 +1,64 @@
+.banner{
+  height:calc(100vh - #{$header_height});
+  background-color:#F4F7FF;
+  position: relative;
+  border-top: solid 2px #D8E3FE;
+  border-bottom: solid 2px #D8E3FE;
+
+  &:before,
+  &:after{
+    @extend %bg-default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before{
+    background-image: url("../assets/images/clouds.svg");
+    z-index: 1;
+  }
+  &:after{
+    background-image: url("../assets/images/chart.svg");
+    z-index: 0;
+  }
+
+  &__info {
+    padding-top: 16vh;
+
+    &-subtitle {
+      font-weight: 500;
+      font-size: $font-s;
+      line-height: 12px;
+      text-transform: uppercase;
+      color: #3D4F9F;
+      margin-bottom: 15px;
+    }
+
+    &-title {
+      font-family: $font-quicksand;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 60px;
+      color: #3D4F9F;
+    }
+    &-description {
+      max-width: 70%;
+      margin: 20px auto;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 32px;
+      color: #8D96BD;
+    }
+  }
+  &__play-btn{
+    height: 52px;
+    width: 52px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+}

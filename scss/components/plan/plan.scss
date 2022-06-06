@@ -1,0 +1,71 @@
+.plan {
+background-color: #F5F8FF;
+  &__wrapper {
+    padding: 170px 0 0;
+  }
+
+  &__info {
+    &-subtitle {
+      font-weight: 500;
+      font-size: $font-s;
+      line-height: 12px;
+      text-transform: uppercase;
+      margin-bottom: 27px;
+    }
+
+    &-title {
+      font-family: $font-quicksand;
+      font-weight: 300;
+      font-size: $font-l;
+      line-height: 45px;
+      margin-bottom: 27px;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: $font-s;
+      line-height: 32px;
+      color: $accent-color-main;
+      margin-bottom: 47px
+    }
+    &-video-btn,
+    &-features-btn{
+      padding: 13px 24px;
+    }
+    &-video-btn {
+        background-color: #4C85FF;
+
+      a{
+        color: white;
+      }
+
+      &:active{
+        background-color:transparent;
+        transition: .3s;
+          a{
+            color: #4C85FF;
+          }
+      }
+    }
+    &-features-btn {
+      background-color: transparent;
+      border: 2px solid #D1D1E4;
+
+      a{
+        color: #ADB4D2;
+      }
+
+      &:active{
+        background-color:#4C85FF;
+        transition: .3s;
+        a{
+          color: white ;
+        }
+      }
+    }
+  }
+  &__image{
+    width: 100%;
+    margin-right: -200px;
+  }
+}

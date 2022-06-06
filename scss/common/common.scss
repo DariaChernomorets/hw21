@@ -1,0 +1,59 @@
+body{
+  font-size: $font-s;
+  font-family: $main-font;
+  font-weight: 400;
+  color: $main-color;
+}
+.container-l,
+.container-m {
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-l{
+  max-width: $container-l;
+}
+.container-m{
+  max-width: $container-m;
+}
+
+a{
+  color: $accent-color-main;
+  text-decoration: none;
+  display: inline-block;
+}
+p{
+  color: $accent-color-main;
+}
+
+ul{
+  list-style: none;
+}
+
+.row,
+.d-flex{
+  display: flex;
+}
+.col{
+  width:50%;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+.align-center{
+  align-items: center;
+}
+.text-center{
+  text-align: center;
+}
+.justify-center{
+  justify-content: center;
+}
+.semi-bold-title{
+  font-weight: 500;
+}

@@ -1,0 +1,84 @@
+.about {
+$accent-color-about: #4074F8;
+  position: relative;
+
+    &:before {
+    @extend %bg-default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    background-image: url("../assets/images/clouds_dark.svg");
+    z-index: 100;
+  }
+  &__wrapper{
+    padding: 170px 0;
+  }
+  &__text{
+    color: $main-color;
+    &-subtitle{
+      font-weight: 500;
+      font-size: $font-s;
+      text-transform: uppercase;
+      margin-bottom:20px;
+
+    }
+    &-title{
+      font-weight: 500;
+      font-size: $font-m;
+      font-family: $font-quicksand;
+      margin-bottom:60px;
+    }
+  }
+  &__list{
+    gap: 68px;
+    li{
+      max-width: 140px;
+      position: relative;
+
+      &:not(:last-child):after{
+        content: '';
+        display: block;
+        width: 28px;
+        height: 2px;
+        background-color: #DAE4FE;
+        position: absolute;
+        left:115%;
+        top:50%;
+      }
+    }
+    &-icon{
+      width: 69px;
+      height: 69px;
+      background-color: #F1F5FF;
+      border-radius: 50%;
+      margin: 0 auto 33px;
+        i{
+          color: $accent-color-about;
+          font-size: 17px;
+        }
+    }
+    &-title{
+      font-family: $font-open-sans;
+      font-weight: 700;
+      font-size: $font-s;
+      line-height: 25px;
+      color: $accent-color-about;
+      margin-bottom: 25px;
+    }
+    &-description{
+      font-family: $font-open-sans;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 19px;
+      color: #ADB3CB;
+
+    }
+  }
+}
