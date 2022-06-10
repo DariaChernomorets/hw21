@@ -101,27 +101,20 @@
 }
   @media (max-width: $br-point-mob) {
 
-    &__navigation-logo {
-
-      a {
-        height: calc(#{$logo-dims} * 3);
-        width: calc(#{$logo-dims} * 3);
-      }
+    &__navigation{
+      gap: 20px;
     }
 
 
     [for="media-menu-btn"] {
-      padding: 13px 50px;
-      font-size: 30px;
+      padding: 10px 25px;
+      font-size: 28px;
       font-weight: 700;
       text-transform: uppercase;
       display: initial;
     }
-
-    &__social-list {
-      i {
-        font-size: 40px;
-      }
+    &__social-list{
+      gap:12px;
     }
   }
 
@@ -129,8 +122,8 @@
   @media (max-width: $br-point-mini) {
 
       [for="media-menu-btn"] {
-        padding: 23px 50px;
-        font-size: 30px;
+        padding: 10px 20px;
+        font-size: 26px;
         font-weight: 700;
         text-transform: uppercase;
         display: initial;
@@ -138,7 +131,7 @@
 
       &__social-list {
         i {
-          font-size: 40px;
+          font-size: 22px;
         }
       }
 

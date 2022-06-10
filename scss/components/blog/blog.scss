@@ -1,0 +1,123 @@
+.blog{
+  background-color: #F5F8FF;
+  position: relative;
+  &__wrapper{
+    padding: 103px 0 202px;
+  }
+    &__title{
+      &-subtitle{
+        font-weight: 500;
+        font-size: $font-xs;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      &-main{
+        font-family: $font-quicksand;
+        font-weight: 500;
+        font-size: $font-m;
+        margin-bottom: 92px;
+      }
+    }
+  &__info{
+    background-color: white;
+    gap: 65px;
+    padding: 65px 0 65px 35px;
+    position: relative;
+
+    &:before{
+      position: absolute;
+      top: 50%;
+      right: 110%;
+      content: url("../assets/images/arrow-left.png");
+      display: block;
+      width: 23px;
+    }
+    &:after{
+      position: absolute;
+      top: 50%;
+      left: 110%;
+      content: url("../assets/images/arrow-right.png");
+      display: block;
+      width: 23px;
+    }
+      &-pics {
+        gap:12px;
+
+        &-add{
+          gap:12px;
+        }
+      }
+
+      &-text{
+
+        &-title{
+          font-family: $font-quicksand;
+          font-weight: 400;
+          font-size: $font-l;
+          line-height: 45px;
+          margin-bottom: 28px;
+        }
+        &-description{
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 27px;
+          color: $accent-color-main;
+          margin-bottom: 28px;
+        }
+      }
+    &-buttons{
+      &-read,
+      &-bookmark{
+        padding: 13px 16px;
+      }
+      &-read{
+        background-color: #D2E1FF;
+        a {
+          font-family: $font-quicksand;
+          font-weight: 700;
+          font-size: 13px;
+          color: #3A79FF;
+        }
+        &:active{
+          background-color:transparent;
+          a {
+            color: $accent-color-main;
+          }
+
+        }
+      }
+      &-bookmark{
+          &:active{
+          background-color:#D2E1FF;
+          a {
+            color: #3A79FF;
+          }
+
+        }
+      }
+    }
+  }
+  &__controls {
+    gap: 12px;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    top:125%;
+    transform: translateX(-50%);
+
+    &-item {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background-color: #D1D6E3;
+
+
+      &:hover,
+      &-active {
+        background-color: #5283FF;
+        transition: .3s;
+        cursor: pointer;
+      }
+    }
+  }
+}

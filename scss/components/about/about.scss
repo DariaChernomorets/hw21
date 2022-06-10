@@ -1,8 +1,8 @@
 .about {
-$accent-color-about: #4074F8;
+  $accent-color-about: #4074F8;
   position: relative;
 
-    &:before {
+  &:before {
     @extend %bg-default;
     position: absolute;
     top: 0;
@@ -17,54 +17,63 @@ $accent-color-about: #4074F8;
     background-image: url("../assets/images/clouds_dark.svg");
     z-index: 100;
   }
-  &__wrapper{
+
+  &__wrapper {
     padding: 170px 0;
   }
-  &__text{
+
+  &__text {
     color: $main-color;
-    &-subtitle{
+
+    &-subtitle {
       font-weight: 500;
       font-size: $font-s;
       text-transform: uppercase;
-      margin-bottom:20px;
+      margin-bottom: 20px;
 
     }
-    &-title{
+
+    &-title {
       font-weight: 500;
       font-size: $font-m;
       font-family: $font-quicksand;
-      margin-bottom:60px;
+      margin-bottom: 60px;
     }
   }
-  &__list{
+
+  &__list {
     gap: 68px;
-    li{
+
+    li {
       max-width: 140px;
       position: relative;
 
-      &:not(:last-child):after{
+      &:not(:last-child):after {
         content: '';
         display: block;
         width: 28px;
         height: 2px;
         background-color: #DAE4FE;
         position: absolute;
-        left:115%;
-        top:50%;
+        left: 115%;
+        top: 50%;
       }
     }
-    &-icon{
+
+    &-icon {
       width: 69px;
       height: 69px;
       background-color: #F1F5FF;
       border-radius: 50%;
       margin: 0 auto 33px;
-        i{
-          color: $accent-color-about;
-          font-size: 17px;
-        }
+
+      i {
+        color: $accent-color-about;
+        font-size: 17px;
+      }
     }
-    &-title{
+
+    &-title {
       font-family: $font-open-sans;
       font-weight: 700;
       font-size: $font-s;
@@ -72,13 +81,97 @@ $accent-color-about: #4074F8;
       color: $accent-color-about;
       margin-bottom: 25px;
     }
-    &-description{
+
+    &-description {
       font-family: $font-open-sans;
       font-weight: 600;
       font-size: 11px;
       line-height: 19px;
       color: #ADB3CB;
-
+      margin-bottom: 92px;
     }
   }
+
+  &__buttons {
+    margin: 0 auto;
+    gap: 48px;
+
+    &-red,
+    &-blue {
+      padding: 13px 15px;
+
+      a {
+        font-family: $font-quicksand;
+        font-weight: 700;
+        font-size: $font-s;
+      }
+    }
+
+    &-red {
+      background-color: #FFD7D7;
+
+      a {
+        color: #D43F3F;
+      }
+
+      &:active {
+        transition: .3s;
+        background-color: #D2E1FF;
+
+        a {
+          color: #3A79FF;
+        }
+      }
+
+    }
+
+    &-blue {
+
+      background-color: #D2E1FF;
+
+      a {
+        color: #3A79FF;
+      }
+
+      &:active {
+        transition: .3s;
+        background-color: #FFD7D7;
+
+        a {
+          color: #D43F3F;
+        }
+      }
+    }
+
+    &-between {
+      position: relative;
+      font-family: $font-open-sans;
+      font-weight: 600;
+      font-size: $font-s;
+      color: #DFE2EF;
+      text-transform: uppercase;
+
+      &:before,
+      &:after {
+        content: '';
+        display: block;
+        width: 15px;
+        height: 2px;
+        background-color: #DAE4FE;
+        position: absolute;
+      }
+
+      &:before {
+        right: 150%;
+        top: 50%;
+      }
+
+      &:after {
+        left: 150%;
+        top: 50%;
+      }
+    }
+
+  }
 }
+

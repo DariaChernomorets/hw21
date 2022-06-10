@@ -1,0 +1,70 @@
+.statistics{
+  overflow-x: hidden;
+
+$stats-accent-color:#5E80FF;
+  &__productivity{
+    position: relative;
+    background: linear-gradient(229.32deg, #6888FF 12.77%, $stats-accent-color 73.11%);
+    color: white;
+    padding: 66px 90px;
+
+    &:before{
+      position: absolute;
+      top: 0;
+      left: -100%;
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: $stats-accent-color;
+
+    }
+      &-img{
+        margin-bottom: 24px;
+      }
+      &-numbers{
+        font-family: $font-quicksand;
+        font-weight: 400;
+        font-size: $font-xl;
+        margin-bottom: 25px;
+      }
+      &-description{
+        font-family: $font-quicksand;
+        font-weight: 500;
+        font-size: 18px;
+        color: white;
+      }
+    }
+    &__users{
+      background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
+      color: $stats-accent-color;
+      padding: 66px 0 66px 90px;
+      position: relative;
+        &:after{
+          position: absolute;
+          top: 0;
+          left: 100%;
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: #E0E9FF;
+        }
+      &-img{
+        margin-bottom: 24px;
+      }
+      &-numbers{
+        font-family: $font-quicksand;
+        font-weight: 400;
+        font-size: $font-xl;
+        margin-bottom: 25px;
+      }
+      &-description{
+        font-family: $font-quicksand;
+        font-weight: 500;
+        font-size: 18px;
+        color: $stats-accent-color;
+        max-width: 260px;
+      }
+    }
+  }

@@ -2,26 +2,17 @@
   @media (max-width: $br-point-netbook) {
     &__list {
       flex-wrap: wrap;
-      gap: 30px;
+      gap: 20px;
 
       li {
-        width: 25%;
+        width: 30%;
       }
     }
   }
   @media (max-width: $br-point-tab) {
     &__list {
-      flex-wrap: wrap;
-      gap: 20px;
-
-      li {
-        width: 35%;
-      }
-    }
-  }
-  @media (max-width: $br-point-mob) {
-    &__list {
       flex-direction: column;
     }
   }
+
 }
