@@ -1,0 +1,69 @@
+.newsletter {
+  border-bottom: #D8E3FE 1px solid;
+
+  &__wrapper {
+    padding: 119px 0;
+    gap: 80px;
+  }
+
+  &__text {
+    width: 35%;
+
+    &-title {
+      font-family: $font-quicksand;
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+
+    &-description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 27px;
+      color: $accent-color-main;
+    }
+  }
+
+  &__form {
+    gap: 15px;
+    width: 65%;
+
+
+    &-email {
+      padding: 21px 30px 21px 23px;
+      width: 100%;
+      background-color: #EFEFF7;
+      border: none;
+      border-radius: 3px;
+      text-transform: capitalize;
+
+      &-label {
+        width: 65%;
+      }
+    }
+
+    &-save {
+      padding: 21px 30px 21px 23px;
+      width: 100%;
+      background-color: #4D6CE1;
+      font-family: $font-quicksand;
+      font-weight: 700;
+      font-size: 13px;
+      text-align: center;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 3px;
+
+      &:active{
+        color: #4D6CE1;
+        background-color: transparent;
+        border: #4D6CE1 1px solid;
+      }
+
+      &-label {
+        width: 35%;
+      }
+    }
+
+  }
+}

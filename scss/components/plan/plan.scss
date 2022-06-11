@@ -28,9 +28,10 @@ background-color: #F5F8FF;
       color: $accent-color-main;
       margin-bottom: 47px
     }
+
     &-video-btn,
     &-features-btn{
-      padding: 13px 24px;
+      padding: $btn-padding;
     }
     &-video-btn {
         background-color: #4C85FF;

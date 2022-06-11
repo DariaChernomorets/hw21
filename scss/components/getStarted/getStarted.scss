@@ -1,0 +1,99 @@
+.getStarted{
+
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  position: relative;
+
+  &:before {
+    @extend %bg-default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/images/clouds-blue.svg");
+    z-index: 100;
+  }
+    &__wrapper{
+      padding: 91px 0;
+    }
+
+  &__info{
+    color: white;
+
+    &-subtitle{
+      font-weight: 500;
+      font-size: $font-xs;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    &-title{
+      font-family: $font-quicksand;
+      font-weight: 300;
+      font-size: 48px;
+      margin-bottom: 18px;
+
+      span{
+        font-weight: 500;
+      }
+    }
+
+    &-description{
+      font-weight: 400;
+      font-size: $font-s;
+      line-height: 29px;
+      color: white;
+      max-width: 700px;
+      margin: 0 auto 38px;
+    }
+  }
+
+  &__buttons{
+
+    &-price,
+    &-docs{
+      padding: $btn-padding;
+      font-family: $font-quicksand;
+      font-size: 13px;
+
+    }
+
+    &-price {
+      background-color: white;
+      font-weight: 700;
+
+      a{
+        color: #565F82;
+
+      }
+
+      &:active{
+        background-color:transparent;
+        transition: .3s;
+
+        a{
+          color: white;
+        }
+      }
+    }
+    &-docs {
+      background-color: transparent;
+      border: 2px solid #D1D1E4;
+
+      a{
+        color: white;
+      }
+
+      &:active{
+        background-color:#4C85FF;
+        transition: .3s;
+
+        a{
+          color: white ;
+        }
+      }
+    }
+  }
+}

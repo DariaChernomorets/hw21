@@ -11,12 +11,10 @@
     display: block;
     width: 100%;
     height: 100%;
-  }
-
-  &:before {
     background-image: url("../assets/images/clouds_dark.svg");
     z-index: 100;
   }
+
 
   &__wrapper {
     padding: 170px 0;
