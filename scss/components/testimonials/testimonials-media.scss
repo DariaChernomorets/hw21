@@ -1,0 +1,44 @@
+.testimonials {
+
+  @media (max-width: $br-point-netbook) {
+    $font-l: 32px;
+
+    &__text {
+      max-width: 50%;
+      margin-right: 80px;
+
+      &-title {
+        font-size: $font-l;
+      }
+    }
+
+  &__person {
+    max-width: 50%;
+
+    &:after {
+      display: none;
+    }
+  }
+  }
+  @media (max-width: $br-point-tab) {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__text {
+      max-width: 100%;
+      margin: 0 auto 20px;
+      text-align: center;
+    }
+
+    &__person {
+      max-width: 100%;
+    }
+
+    &__controls {
+      top: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

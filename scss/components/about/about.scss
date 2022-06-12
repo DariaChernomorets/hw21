@@ -2,6 +2,7 @@
   $accent-color-about: #4074F8;
   position: relative;
 
+
   &:before {
     @extend %bg-default;
     position: absolute;
@@ -12,7 +13,7 @@
     width: 100%;
     height: 100%;
     background-image: url("../assets/images/clouds_dark.svg");
-    z-index: 100;
+    z-index: 1;
   }
 
 
@@ -157,6 +158,7 @@
         height: 2px;
         background-color: #DAE4FE;
         position: absolute;
+        z-index: 10;
       }
 
       &:before {

@@ -3,6 +3,7 @@
   background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
   position: relative;
 
+
   &:before {
     @extend %bg-default;
     position: absolute;
@@ -13,7 +14,7 @@
     width: 100%;
     height: 100%;
     background-image: url("../assets/images/clouds-blue.svg");
-    z-index: 100;
+
   }
     &__wrapper{
       padding: 91px 0;

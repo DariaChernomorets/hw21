@@ -1,4 +1,45 @@
 .banner{
+  @media (max-width: $br-point-netbook) {
 
+    &__info {
+      padding-top: 10vh;
+    }
 
+    &__play-btn{
+      height: 62px;
+      width: 62px;
+    }
+  }
+  @media (max-width: $br-point-tab){
+    &__info {
+      padding-top: 8vh;
+
+      &-title {
+        font-size: 42px;
+        line-height: 42px;
+      }
+
+      &-description {
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  @media (max-width: $br-point-mob){
+    &__info {
+      padding-top: 5vh;
+
+      &-title {
+        font-size: 38px;
+        line-height: 38px;
+      }
+
+      &-description {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
 }

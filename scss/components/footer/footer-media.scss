@@ -44,8 +44,7 @@
       display: none;
       width: 100%;
       position: absolute;
-      top: $header_height;
-      left: 0;
+      bottom: $footer_height;
       background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
 
       ul {

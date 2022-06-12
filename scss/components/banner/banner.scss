@@ -41,7 +41,7 @@
     &-title {
       font-family: $font-quicksand;
       font-weight: 300;
-      font-size: 48px;
+      font-size: $font-xl;
       line-height: 60px;
       color: #3D4F9F;
     }
@@ -67,6 +67,7 @@
     bottom: 28px;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 10;
 
     &-item{
       height: 8px;

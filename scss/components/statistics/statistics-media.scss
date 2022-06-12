@@ -1,0 +1,52 @@
+.statistics {
+  @media (max-width: $br-point-tab) {
+    &__wrapper {
+      flex-wrap: wrap;
+    }
+
+    &__productivity,
+    &__users {
+      width: 100%;
+      padding: 66px 0;
+    }
+
+    &__productivity {
+      &:before {
+        display: none;
+      }
+
+      &-img {
+        justify-content: center;
+      }
+
+      &-numbers {
+        text-align: center;
+      }
+
+      &-description {
+        text-align: center;
+      }
+
+
+    }
+
+    &__users{
+     &:after {
+        display: none;
+      }
+      &-img {
+        justify-content: center;
+      }
+
+      &-numbers {
+        text-align: center;
+      }
+
+      &-description {
+        text-align: center;
+        max-width: 100%;
+      }
+
+    }
+  }
+}

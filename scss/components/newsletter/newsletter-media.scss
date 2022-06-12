@@ -1,0 +1,41 @@
+.newsletter{
+  @media (max-width: $br-point-netbook){
+    &__wrapper {
+      padding: 100px 0;
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: $br-point-tab){
+    &__wrapper {
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    &__text,
+    &__form{
+      width: 100%;
+      text-align: center;
+    }
+   }
+
+  @media (max-width: $br-point-mob){
+    &__form{
+      flex-wrap: wrap;
+
+          &-email {
+
+            &-label {
+              width: 100%;
+            }
+        }
+
+        &-save {
+
+            &-label {
+            width: 100%;
+          }
+        }
+    }
+  }
+}

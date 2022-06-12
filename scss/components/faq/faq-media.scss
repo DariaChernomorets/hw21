@@ -1,0 +1,81 @@
+.faq {
+  @media (max-width: $br-point-comp) {
+    &__accordion {
+      padding: 0 40px;
+
+      &-body {
+        gap: 10px;
+      }
+    }
+  }
+
+  @media (max-width: $br-point-netbook) {
+
+    &__wrapper {
+      padding: 100px 0;
+
+    }
+    &__accordion {
+      padding: 0 20px;
+
+      &-body {
+        gap: 10px;
+      }
+    }
+  }
+
+  @media (max-width: $br-point-tab) {
+
+    &__wrapper {
+      padding: 70px 0;
+
+    }
+    &__accordion {
+
+      padding: 0;
+
+      &-btn {
+        width: 50%;
+        margin: 0 auto;
+      }
+
+      &-body {
+        flex-wrap: wrap;
+        gap: 10px;
+
+        p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $br-point-mob) {
+    &__accordion {
+
+      &-btn {
+        width: 100%;
+      }
+
+    }
+    input {
+      display: none;
+
+
+      &:checked + label {
+        color: #495274;
+
+        &:before {
+          transition: transform .35s;
+          transform: rotate(270deg);
+        }
+
+        & + .faq__accordion-body {
+          height: auto;
+
+          padding: 10px;
+        }
+      }
+    }
+  }
+}
