@@ -1,8 +1,9 @@
 .getStarted{
 
   background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  z-index: 0;
   position: relative;
-
+  padding: 91px 0;
 
   &:before {
     @extend %bg-default;
@@ -14,11 +15,9 @@
     width: 100%;
     height: 100%;
     background-image: url("../assets/images/clouds-blue.svg");
-
+    z-index: -1;
   }
-    &__wrapper{
-      padding: 91px 0;
-    }
+
 
   &__info{
     color: white;

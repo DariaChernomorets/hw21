@@ -1,79 +1,16 @@
 .footer {
-  &__menu-btn {
-    display: none;
-  }
 
-  [for="media-menu-btn-footer"] {
-    display: none;
-  }
-
-  &__hidden-desktop {
-    display: none;
-    text-transform: capitalize;
-  }
-
-  $logo-dims: 26px;
 
   @media (max-width: $br-point-netbook) {
-    nav {
-      z-index: 100;
-      box-shadow: 0 13px 14px -11px rgb(0, 0, 0, 62%);
-    }
-    &__wrapper {
-      position: relative;
-    }
-    &__btn {
-      display: none;
-    }
-    [for="media-menu-btn-footer"] {
-      background: #D2E1FF;
-      border-radius: 2px;
-      padding: 13px 21px;
-      color: #3A79FF;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      display: initial;
-    }
-    &__navigation {
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      gap: 40px;
+
+    &__navigation-logo{
+      padding-left: 20px;
     }
     nav {
-      display: none;
-      width: 100%;
-      position: absolute;
-      bottom: $footer_height;
-      background: linear-gradient(101.48deg, #E9EFFF 41.56%, #E0E9FF 81.53%);
-
-      ul {
-        flex-direction: column;
-        gap: 0;
-
-        a {
-          display: block;
-          font-size: 20px;
-          padding: 10px 0;
-          text-align: center;
-
-          &:hover {
-            color: white !important;
-            background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
-            transition: .3s;
-          }
-
-        }
-      }
+     display: none;
     }
-  &__menu-btn {
-    &:checked {
-      & + nav {
-        display: initial;
-      }
-    }
-  }
-  &__social-list {
+
+    &__social-list {
     i {
       font-size: 22px;
     }
@@ -81,52 +18,20 @@
   }
   @media (max-width: $br-point-tab) {
 
-  [for="media-menu-btn-footer"] {
-    padding: 13px 41px;
-    font-size: 16px;
-  }
-      ul {
-
-      a {
-         font-size: 24px;
-      }
-    }
 
   &__social-list {
     i {
       font-size: 26px;
     }
   }
+
+    &__btn{
+      display: none;
+    }
 }
-  @media (max-width: $br-point-mob) {
-
-    &__navigation{
-      gap: 20px;
-    }
-
-
-    [for="media-menu-btn-footer"] {
-      padding: 10px 25px;
-      font-size: 28px;
-      font-weight: 700;
-      text-transform: uppercase;
-      display: initial;
-    }
-    &__social-list{
-      gap:12px;
-    }
-  }
-
 
   @media (max-width: $br-point-mini) {
 
-      [for="media-menu-btn-footer"] {
-        padding: 10px 20px;
-        font-size: 26px;
-        font-weight: 700;
-        text-transform: uppercase;
-        display: initial;
-      }
 
       &__social-list {
         i {
